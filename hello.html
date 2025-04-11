@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vanshika's Food Blog</title>
+<link rel="stylesheet" href="style.css" />
+
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<section id="recipes" data-aos="fade-up">
+
+<header>
+<h1>Vanshika's Food Blog</h1>
+<nav>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li>
+<li><a href="#recipes">Recipes</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<button id="themeToggle" aria-label="Toggle Dark Mode">
+🌙
+</button>
+
+</header>
+
+<section id="home" class="hero">
+<div class="hero-overlay">
+<div class="hero-content">
+<h2>Welcome to my kitchen!</h2>
+<p>Explore delicious vegetarian recipes and heartwarming food stories.</p>
+<a href="#recipes" class="hero-btn">Discover Recipes</a>
+</div>
+</div>
+</section>
+
+<section id="recipes">
+<h2>Latest Recipes</h2>
+<input
+type="text"
+id="searchInput"
+placeholder="Search recipes..."
+onkeydown="if(event.key === 'Enter') searchAndDisplayRecipes()"
+/>
+<button onclick="searchAndDisplayRecipes()">Search</button>
+
+<div class="card-container" id="recipeCards"></div>
+</section>
+
+<section id="about">
+<h2>About Me</h2>
+<p>Hi! I'm Vanshika, a food lover sharing my favorite vegetarian recipes and experiments in the kitchen. Join me on this flavorful journey!</p>
+</section>
+
+<section id="testimonials">
+<h2>What People Are Saying</h2>
+<div class="testimonial-container">
+<div class="testimonial-card">
+<p>"Vanshika's recipes made me fall in love with cooking again!"</p>
+<span>– Anjali</span>
+</div>
+<div class="testimonial-card">
+<p>"Tried the Maggi recipe — it was fire! 🔥"</p>
+<span>– Rahul</span>
+</div>
+<div class="testimonial-card">
+<p>"This blog is my go-to for vegetarian meals!"</p>
+<span>– Priya</span>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<form>
+<div class="form-row">
+<div class="form-group">
+<label for="name">Name</label>
+<input type="text" id="name" placeholder="Your Name" required />
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" placeholder="Your Email" required />
+</div>
+</div>
+
+<div class="form-group">
+<label for="message">Message</label>
+<textarea id="message" placeholder="Your Message" rows="4" required></textarea>
+</div>
+
+<button type="submit" class="btn-send">Send Message</button>
+</form>
+</section>
+
+<section id="discover">
+<h2>Discover Recipes</h2>
+<div class="slider">
+<button class="slide-btn left" onclick="slideLeft()">&#10094;</button>
+
+<div class="card-container" id="recipeSlider">
+<!-- Cards will be inserted by JS -->
+</div>
+
+<button class="slide-btn right" onclick="slideRight()">&#10095;</button>
+</div>
+</section>
+
+
+<footer>
+<p>&copy; 2025 Vanshika's Food Blog</p>
+<div class="footer-icons">
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Instagram" /></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="YouTube" /></a>
+<a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="Email" /></a>
+</div>
+</footer>
+
+<section id="funfacts">
+<h2>Did You Know?</h2>
+<div class="fact-container">
+<div class="fact-card">🍅 Tomatoes are actually fruits!</div>
+<div class="fact-card">🥕 Carrots were originally purple.</div>
+<div class="fact-card">🍫 Chocolate was once used as money!</div>
+</div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
