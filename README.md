@@ -14,7 +14,7 @@ A responsive food blog website built using HTML, CSS and JavaScript.
 - JavaScript
 
 ## 🌐 Live Demo
-(Link will be added after deployment)
+https://vanshikaagarwal1811.github.io/food-blog-website/
 
 ## 👩‍💻 Author
 Vanshika Agarwal
